@@ -1,0 +1,42 @@
+.header {
+  /* o max-width ajuda a responsividade */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-menu a {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  /* 
+    quando trabalhamos com link é bom aumentarmos o padding
+    para uma maior area de contato, pensando nos dispositivos menores
+  */
+  padding: 10px 20px;
+  color: #141414;
+  display: block;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .header {
+    gap: 40px;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .header a {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+}
